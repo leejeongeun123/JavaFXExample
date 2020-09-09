@@ -16,7 +16,7 @@ public class AppMain extends Application{
 		BorderPane root = loader.load();
 		
 		RootController controller = loader.getController();
-		controller.setPrimaryStage(primaryStage); // 
+		controller.setPrimaryStage(primaryStage); 
 		
 		Scene scene = new Scene(root);
 		primaryStage.setScene(scene);

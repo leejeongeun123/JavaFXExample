@@ -12,6 +12,7 @@ public class ConnectionDB {
 		try {
 		Class.forName ("oracle.jdbc.driver.OracleDriver");
 			conn = DriverManager.getConnection(url, user, passwd);
+			System.out.println("db에 연결되었습니다.");
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		
